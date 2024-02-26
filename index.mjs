@@ -13,7 +13,7 @@ app.use(express.json());
 // Connect to MongoDB
 const uri = "mongodb+srv://admin:admin@cluster0.ijpylks.mongodb.net/Marketplace?retryWrites=true&w=majority";
 
-app.get('/', (req, res) => res.send('Marketplace App is Running!'));
+app.get('/', (req, res) => res.send('{"Message":"Welcome to DressStore Application."}'));
 
 app.get('/products', async (req, res, next) => {
     if (req.query.name) {
